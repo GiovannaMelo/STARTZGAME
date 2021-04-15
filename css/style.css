@@ -169,3 +169,89 @@ body {
 ::-webkit-scrollbar-thumb {
     background: #ED145B;
 }
+
+.pag-login {
+    background-color: #1D2123;
+    padding: 50px 0;
+}
+
+.box-login {
+    background-color: #c20e4a77;
+    width: 50%;
+    margin:auto;
+    color: #ecf0f1;
+    box-shadow: 3px 3px 5px 2px #650726;
+    padding: 60px 20px 0 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.pag-login h1 {
+    margin: 0;
+    text-align:center;
+    margin-bottom: 40px;
+}
+
+.extra {
+    height: 50px;
+}
+
+.pag-login input {
+    text-align: center;
+    width: 70%;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 1px solid rgba(187, 187, 187, 0.61);
+}
+
+.pag-login button {
+    color: white;
+    width: 150px;
+    height: 45px;
+    background-color: #650726;
+    text-transform: uppercase;
+    margin: 20px 0 50px 0;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    font-weight: 750;
+}
+
+.pag-login button:hover{
+    background-color: #ecf0f1;
+    color: #650726;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.pag-graficos{
+    background-color: #650726;
+}
+
+.pag-graficos .container{
+    background-color: #1d2123c5;
+}
+.pag-graficos .img-grafico{
+    width: 45%;
+    height: 100%;
+    float: left;
+}
+.pag-graficos img{
+    width: 500px;
+
+}
+
+.pag-graficos .graficos{
+    width: 50%;
+    margin-left: 3%;
+    height: 100%;
+    float: left;
+}
+
+.body{
+    background-color: #1D2123;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DASHBOARD- STARTZGAME</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="icon" href="img/missao.png">
+    <script src='main.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+</head>
+<body class="body">
+    <div class="header">
+        <div class="container">
+            <h1 class="logo"><span class="destaque">STARTZGAME </span>CORPORATE</h1>
+        </div>
+    </div>
+    <div class="pag-graficos">
+        <div class="container">
+            <div class="img-grafico">
+                <img src="img/graficos.png" alt="Imagem Gráficos">
+            </div>
+            <div class="graficos">
+                <canvas id="myChart" width="500" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+  
+</body>
+</html>
+
+<script>
+    
+    var ctx = document.getElementById('myChart');
+
+    var meuGrafico = new Chart(ctx, {
+        
+        type: 'bar',
+
+        data: {
+            
+            labels: ["jan", "fev", "mar", "abr", "mai", "jun"],
+
+            datasets: [
+             
+            {
+                label: "Niveis de Alcance 2021",
+                data: [6000, 8000, 15000, 8900, 11000, 9000],
+                borderWidth: 3,
+                borderColor: '#650726',
+                backgroundColor: 'transparent',
+            },
+
+            {
+                type: 'bubble',
+                label: "Niveis de Alcance 2020",
+                data: [4000, 11000, 6000, 6000, 2000, 7000],
+                borderWidth: 5,
+                borderColor: '#ED145B',
+                backgroundColor: 'transparent'
+            },
+
+            {
+                type: 'line',
+                label: "Niveis de Alcance 2019",
+                data: [1000, 5000, 12000, 7800, 9000, 6000],
+                borderWidth: 3,
+                borderColor: '#ee6995',
+                backgroundColor: 'transparent'
+            }
+            ]
+        },
+        options: {
+            
+            title: {
+                display: true,
+                fontSize: 20,
+                text: "Niveis de Alcance",
+                position: 'top',
+            },
+            legend: {
+                display: true,
+                reverse: true,
+                position: 'right'
+            },
+            layout: {
+            padding: {
+                top: 50
+            },
+           
+        }
+        }
+    })
+
+    Chart.defaults.global.defaultFontColor = "#ffff";
+</script>
